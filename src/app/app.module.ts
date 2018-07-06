@@ -1,14 +1,20 @@
+// DEPENDENCIES
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+// COMPONENTS
+import {
+  AppComponent,
+  NoteListComponent
+} from './components';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule
+  ],
+  declarations: [
+    AppComponent,
+    NoteListComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
