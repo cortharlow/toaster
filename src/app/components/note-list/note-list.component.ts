@@ -13,5 +13,11 @@ export class NoteListComponent {
 
   constructor() { }
 
+  saveNote() {
+    console.log('New Note');
+    console.log(this.note);
+    this.notes.push(this.note);
+    this.note = '';
+  }
 
 }

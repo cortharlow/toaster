@@ -12,6 +12,7 @@ import {
 // COMPONENTS
 import {
   AppComponent,
+  NoteComponent,
   NoteListComponent
 } from './components';
 
@@ -26,6 +27,7 @@ import {
   ],
   declarations: [
     AppComponent,
+    NoteComponent,
     NoteListComponent
   ],
   providers: [],

@@ -1,10 +1,10 @@
 <h1>T O A S T E R</h1>
 
+
 <textarea [(ngModel)]="note"></textarea>
+<button type="button" (click)="saveNote()">Save</button>
 <markdown [data]="note"></markdown>
 
-<ul>
-  <li *ngFor="let note of notes">
-    <markdown>{{note}}</markdown>
-  </li>
-</ul>
+<div *ngFor="let note of notes">
+    <note [note]="note"></note>
+</div>

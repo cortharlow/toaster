@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
-@component({
+@Component({
   selector: 'note',
   templateUrl: './note.component.html',
   styleUrls: ['./note.component.css']
@@ -12,5 +12,7 @@ export class NoteComponent {
 
   constructor() { }
 
-
+  ngOnInit() {
+    console.log(this.note);
+  }
 }
