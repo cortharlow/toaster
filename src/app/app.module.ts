@@ -4,6 +4,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
 import { MarkdownModule } from 'ngx-markdown';
 
+// MATERIAL
+import {
+  MatCardModule
+} from '@angular/material';
+
 // COMPONENTS
 import {
   AppComponent,
@@ -14,7 +19,10 @@ import {
   imports: [
     BrowserModule,
     FormsModule,
-    MarkdownModule.forRoot()
+    MarkdownModule.forRoot(),
+
+    // MATERIAL
+    MatCardModule
   ],
   declarations: [
     AppComponent,
