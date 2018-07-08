@@ -1,6 +1,8 @@
 // DEPENDENCIES
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'
+import { MarkdownModule } from 'ngx-markdown';
 
 // COMPONENTS
 import {
@@ -10,7 +12,9 @@ import {
 
 @NgModule({
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    MarkdownModule.forRoot()
   ],
   declarations: [
     AppComponent,

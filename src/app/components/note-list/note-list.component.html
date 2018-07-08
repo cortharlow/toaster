@@ -1,5 +1,10 @@
 <h1>T O A S T E R</h1>
 
+<textarea [(ngModel)]="note"></textarea>
+<markdown [data]="note"></markdown>
+
 <ul>
-  <li>Note</li>
+  <li *ngFor="let note of notes">
+    <markdown>{{note}}</markdown>
+  </li>
 </ul>
